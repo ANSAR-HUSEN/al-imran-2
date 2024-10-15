@@ -10,18 +10,26 @@
     
     /* color: #E48727; */
 }
+.large_screen{
+    /* background-image: url(../../assets/pattern_L.png); */
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(18, 138, 2, 0.671)), url(../../assets/pattern_L.png);
+    background-size: contain;
+}
 .time_container{
-    display: flex;
+    /* display: flex; */
     width: 250px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     border-top: 2px solid  #05A04B;
     border-bottom: 2px solid  #05A04B;
     border-radius: 15px;
     padding: 20px;
-    margin-top: 10px;
+    /* margin-bottom: 100px; */
     font-size: 20px;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
     /* color: #E48727; */
+}
+.solat_img{
+    margin-top: 70px;
 }
 .time_container:hover{
     background-color: hwb(26 65% 32% / 0.594);
@@ -33,6 +41,14 @@ ul li{
 }
 .solat_img{
     display: none;
+}
+.prayer__time{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.prayer__time:hover{
+    background-color: hwb(30 55% 45% / 0.594);
 }
 @media (min-width : 769px){
 .solat_img{

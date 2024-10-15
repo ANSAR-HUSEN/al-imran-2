@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import PrayTimes from 'praytimess'
 import './Prayer_time.css'
-import solat from '../../assets/pray.png'
+import solat from '../../assets/prayer_two.png'
 import AOS from 'aos';
 
 const PrayerTime = () => {
@@ -29,35 +29,59 @@ useEffect(()=>{
             <div className='time_container' data-aos="fade-left">
                 <div className='names_prayer' >
                     <ul>
-                        <li><h4>ሶላት</h4></li>
-                        <li>ፈጅር           {times.fajr}</li>
-                        <li>ፀሀይ መዉጫ</li>
-                        <li>ዙህር</li>
-                        <li>ዓስር</li>
-                        <li>መጝሪብ</li>
-                        <li>ዒሻ</li>
+                        <li>
+                        <div className='prayer__time'>
+                                <h4>ሶላት</h4>
+                                <h4>ወቅት</h4>
+                            </div>
+                            <hr style={{ border: '1px dotted #05A04B', margin:'5px 0'  }}/>
+                        </li>
+                        <li>
+                            <div className='prayer__time'>
+                                <p>ፈጅር</p>
+                                <p>{times.fajr}</p>
+                            </div>
+                            <hr style={{ border: '1px dotted #05A04B',  }}/>
+                        </li>
+                        <li>
+                        <div className='prayer__time'>
+                                <p>ፀሀይ መዉጫ</p>
+                                <p>{times.sunrise}</p>
+                                </div>
+                                <hr style={{ border: '1px dotted #05A04B', }} />
+                                </li>
+                        <li>
+                        <div className='prayer__time'>
+                                <p>ዙህር</p>
+                                <p>{times.dhuhr}</p>
+                                </div>
+                                <hr style={{ border: '1px dotted #05A04B' }} />
+                        </li>
+                        <li>
+                        <div className='prayer__time'>
+                                <p>ዓስር</p>
+                                <p>{times.asr}</p>
+                                </div>
+                                <hr style={{ border: '1px dotted #05A04B' }} />
+                        </li>
+                        <li>
+                        <div className='prayer__time'>
+                                <p>መጝሪብ</p>
+                                <p>{times.maghrib}</p>
+                                </div>
+                                <hr style={{ border: '1px dotted #05A04B', }}/>
+                        </li>
+                        <li>
+                        <div className='prayer__time'>
+                                <p>ዒሻ</p>
+                                <p>{times.isha}</p>
+                                </div>
+                        </li>
                         
                     </ul>
                 </div>
-                <div className='azan_times' >
-                    <ul style={{color:'#EA8723'}} >
-                        <li><h4 style={{color:'black'}}>ወቅት</h4></li>
-                        {/* <li>{times.fajr}</li> */}
-                        <li>{times.sunrise}</li>
-                        <li>{times.dhuhr}</li>
-                        <li>{times.asr}</li>
-                        <li>{times.maghrib}</li>
-                        <li>{times.isha}</li>
-                    </ul>
-                </div>
-                {/* <div></div> */}
+               
             </div>
-            {/* <h1>Fajir {times.fajr}</h1>
-            <h1>dhuhur {times.dhuhr}</h1>
-            <h1>Asr {times.asr}</h1>
-            <h1>maghrib {times.maghrib}</h1>
-            <h1>isha {times.isha}</h1> */}
-
         </div>
         </div>
     );

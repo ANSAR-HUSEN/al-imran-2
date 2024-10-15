@@ -5,9 +5,13 @@
   width: 37vh;
 }
 .services__inclined__container {
-  /* background-color: #e6891e; */
   margin-top: 50px;
 }
+/* .wrapper{
+  background-image: url(../../assets/pattern_R.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
 .services__inclined {
 height: 45px;
 transform: skewY(-10deg);

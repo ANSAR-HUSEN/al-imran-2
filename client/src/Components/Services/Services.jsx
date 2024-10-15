@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 function Services() {
   return (
-    <>
+    <div className='wrapper'>
       <div className="serivices__title">
         <h4>Our Worldwide</h4>
         <h1>Offerd Services</h1>
@@ -16,7 +16,7 @@ function Services() {
        <ServiceCard/>
        <ServiceCard/>
       </div>
-    </>
+    </div>
   );
 }
 
