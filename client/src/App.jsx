@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+import "./App.css";
+import Services from "./Components/Services/Services";
+import Banner from "./Components/Banner/Banner";
+import PrayerTimes from "./Components/Prayer_times/Prayer_time";
 
 function App() {
-  
-
   return (
     <>
-    <h1>test</h1>
+      <Banner />
 
+      <PrayerTimes />
+      <Services />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

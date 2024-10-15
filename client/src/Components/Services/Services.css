@@ -1,0 +1,28 @@
+.serivices__title {
+  text-align: center;
+}
+.services__container {
+  width: 37vh;
+}
+.services__inclined__container {
+  /* background-color: #e6891e; */
+  margin-top: 50px;
+}
+.services__inclined {
+height: 45px;
+transform: skewY(-10deg);
+border-radius: 10%;
+background-color: #e6891e;
+}
+.services__content{
+    margin-top: -27px;
+    border-radius: 5%;
+    background-color: #e6891e;
+    padding: 40px 10px 10px;
+    
+}
+.service__card__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:50px ;
+}
