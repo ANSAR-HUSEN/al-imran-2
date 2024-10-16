@@ -77,7 +77,8 @@ button:hover {
 
 @media screen and (max-width: 850px) {
   .NavbarItems {
-    z-index: 99;
+    /* z-index: 99; */
+   position: relative;
   }
   .nav-menu {
     display: flex;
@@ -103,10 +104,10 @@ button:hover {
     transition: 0.3s ease-in-out;
   }
   .nav-links {
-    display: block;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 35px;
     font-size: 1.2rem;
-    padding: 2rem 0;
   }
   .nav-links:hover {
     background: #05A04B;
@@ -116,18 +117,19 @@ button:hover {
     display: none;
   }
   .nav-links-mobile {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     border-radius: 4px;
-    width: 80%;
-    background: #05A04B;
+    width: 50%;
+    background: #0C9D47;
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 2px;
+    height: 35px;
   }
   .menu-icons {
     display: block;
