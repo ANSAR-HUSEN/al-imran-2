@@ -76,9 +76,6 @@ function Banner() {
   return (
     <section className='banner-container'>
     <div className='banner'>
-      <nav>
-        {/* Navigation items can go here */}
-      </nav>
       <div className='logo'>
         <img src={logo} alt="Logo" />
         <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
