@@ -10,8 +10,8 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 41%, rgba(10,158,74,1) 9
     position: relative;
     color: white;
     font-size: 2.5rem;
+    margin-top: 70px
 }
-/* AIzaSyCTKt4HOHVLNT5BT3g0HWSGnxd2aV1vzu8 */
 .data{
 background: rgb(253,253,253);
 background: linear-gradient(360deg, rgba(253,253,253,1) 0%, rgba(10,158,74,1) 83%, rgba(10,158,74,1) 100%);
