@@ -26,9 +26,9 @@ function Banner() {
     
       const animation = gsap.fromTo(
         name.current,
-        { fontSize: '40px'}, // Starting font size
+        { fontSize: '2.5rem'}, // Starting font size
         {
-          fontSize: '20px',
+          fontSize: '1rem',
           duration: 1,
           scrollTrigger: {
             trigger: name.current,
@@ -96,6 +96,12 @@ function Banner() {
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             {counterOn && <CountUp className='middle' start={0} end={150} duration={5} delay={0}/> }
             <p>በላይ መምህራን</p>
+            </Scroll>
+          </div>
+          <div className='graduates_mobile' data-aos="zoom-in">
+          <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
+            {counterOn &&   <CountUp className='middle' start={0} end={5000} duration={5} delay={0}/>}
+            <p >በላይ ምሩቃን</p>
             </Scroll>
           </div>
         </div>
