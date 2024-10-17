@@ -9,8 +9,8 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 41%, rgba(10,158,74,1) 9
     flex-direction: column;
     position: relative;
     color: white;
-    font-size: 2.5rem;
-    margin-top: 70px
+    font-size: 3rem;
+    margin-top: 20px
 }
 .data{
 background: rgb(253,253,253);
@@ -27,6 +27,7 @@ background: linear-gradient(360deg, rgba(253,253,253,1) 0%, rgba(10,158,74,1) 83
  .mid{
     position: relative;
     margin-top: 50px;
+    
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,6 +104,9 @@ background: linear-gradient(360deg, rgba(253,253,253,1) 0%, rgba(10,158,74,1) 83
     background-repeat: no-repeat;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
 }
+.graduates_mobile{
+    display: none;
+}
 .pop_right{
     position: relative;
     width: 30%;
@@ -153,17 +157,37 @@ background: linear-gradient(360deg, rgba(253,253,253,1) 0%, rgba(10,158,74,1) 83
 }
 @media (max-width : 769px){
      .pop_left, .pop_right{
+        width: 50%;
+    }  
+    .logo{
+        font-size: 1.5rem;
+    }
+    .mid {
         display: none;
-    }    
-    .mid{
-        display: flex;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
     }
-    /* .image{
-        display: none;
-    } */
+    .graduates_mobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 70%;
+        color: white;
+        font-size: 20px;
+        height: 25%;
+        width: 60%;
+        padding-top: 10%;
+        border-radius: 10px;
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/graduate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+
+    }
     }
 

@@ -6,6 +6,8 @@ import Services from "./Components/Services/Services";
 import Banner from "./Components/Banner/Banner";
 import PrayerTimes from "./Components/Prayer_times/Prayer_time";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from './Components/Footer/Footer'
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <PrayerTimes />
       {/* <Services /> */}
       <Blogs_events/>
+      <Footer/>
     </>
   );
 }
