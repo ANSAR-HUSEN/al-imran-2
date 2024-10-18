@@ -114,7 +114,7 @@ button:hover {
     background: #05A04B;
     transition: none;
   }
-  button {
+  .sign-up {
     display: none;
   }
   .nav-links-mobile {
