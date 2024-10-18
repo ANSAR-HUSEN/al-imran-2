@@ -15,8 +15,8 @@
     background:linear-gradient(rgba(0, 0, 0, 0), rgba(18, 138, 2, 0.671)), url(../../assets/pattern_L.png);
     background-size: contain;
     overflow : hidden;
-    margin-top: -120px;
-    padding-bottom: 15px;
+    /* margin-top: -120px; */
+    /* padding-bottom: 15px; */
 }
 .time_container{
     /* display: flex; */
@@ -33,7 +33,7 @@
     /* color: #E48727; */
 }
 .solat_img{
-    margin-top: 70px;
+    margin-top: 30px;
 }
 .time_container:hover{
     background-color: hwb(26 65% 32% / 0.594);
