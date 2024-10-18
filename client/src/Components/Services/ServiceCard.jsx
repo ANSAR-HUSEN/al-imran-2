@@ -1,14 +1,14 @@
 import React from 'react'
 import './Services.css'
 
-function ServiceCard() {
+function ServiceCard({title,desc}) {
   return (
     <>
     <div className="services__container">
-            <h3>Quran Learning</h3>
+            <h3>{title}</h3>
             <div className="services__inclined__container">
                 <div className="services__inclined"></div>
-                <div className="services__content">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+                <div className="services__content">{desc}</div>
             </div>
         </div>
 

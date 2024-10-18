@@ -4,6 +4,7 @@ import "./App.css";
 import Services from "./Components/Services/Services";
 import Banner from "./Components/Banner/Banner";
 import PrayerTimes from "./Components/Prayer_times/Prayer_time";
+import Donation from "./Donation/Donation";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <PrayerTimes />
       <Services />
+      <Donation/>
     </>
   );
 }

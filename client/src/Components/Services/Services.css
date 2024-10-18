@@ -1,5 +1,6 @@
 .serivices__title {
   text-align: center;
+  margin-top: 25px;
 }
 .services__container {
   width: 37vh;
@@ -11,7 +12,7 @@
 .services__inclined {
 height: 45px;
 transform: skewY(-10deg);
-border-radius: 10%;
+border-radius: 15px 15px 0 0;
 background-color: #e6891e;
 }
 .services__content{
@@ -23,6 +24,7 @@ background-color: #e6891e;
 }
 .service__card__container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding:50px ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 30px  ;
+    
 }
