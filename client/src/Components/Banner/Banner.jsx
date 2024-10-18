@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountUp from 'react-countup'
 import Scroll from 'react-scroll-trigger';
-import './Banner.css';
+import classes from './Banner.module.css';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -24,22 +24,22 @@ function Banner() {
 
   useEffect(() => {
     
-      const animation = gsap.fromTo(
-        name.current,
-        { fontSize: '2.5rem'}, // Starting font size
-        {
-          fontSize: '1rem',
-          duration: 1,
-          scrollTrigger: {
-            trigger: name.current,
-            start: 'top 80%',
-            end: 'bottom 20%',
-            scrub: true,
-            // Optional: markers for debugging
+      // const animation = gsap.fromTo(
+      //   name.current,
+      //   { fontSize: '2.5rem'}, // Starting font size
+      //   {
+      //     fontSize: '1rem',
+      //     duration: 1,
+      //     scrollTrigger: {
+      //       trigger: name.current,
+      //       start: 'top 80%',
+      //       end: 'bottom 20%',
+      //       scrub: true,
+      //       // Optional: markers for debugging
             
-          },
-        }
-      );
+      //     },
+      //   }
+      // );
 
     const animation_2 = gsap.fromTo(
         law.current,
@@ -60,7 +60,7 @@ function Banner() {
      
     return () => {
       // Clean up ScrollTrigger on unmount
-      animation.kill();
+      animation_2.kill();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
    
@@ -74,59 +74,59 @@ function Banner() {
    
   
   return (
-    <section className='banner-container'>
-    <div className='banner'>
-      <div className='logo'>
+    <section className={classes.banner_container}>
+    <div className={classes.banner}>
+      <div className={classes.logo}>
         <img src={logo} alt="Logo" />
         <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <h1 ref={name}>አል-ኢምራን(CMC) የቁርአን ኣና ኢስላማዊ ትምህርት ተቋም</h1>
         </Scroll>
       </div>
     </div>
-    <div className='data'>
-       <div className='pop_left' >
-          <div className='madrasas' data-aos="fade-right">
+    <div className={classes.data}>
+       <div className={classes.pop_left} >
+          <div className={classes.madrasas} data-aos="fade-right">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className='middle' start={0} end={200} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={200} duration={5} delay={0}/>}
             <p>በላይ መድረሳዎች</p>
             </Scroll>
           </div>
           
-          <div className='teachers' data-aos="fade-right" >
+          <div className={classes.teachers} data-aos="fade-right" >
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn && <CountUp className='middle' start={0} end={150} duration={5} delay={0}/> }
+            {counterOn && <CountUp className={classes.middle} start={0} end={150} duration={5} delay={0}/> }
             <p>በላይ መምህራን</p>
             </Scroll>
           </div>
-          <div className='graduates_mobile' data-aos="zoom-in">
+          <div className={classes.graduates_mobile} data-aos="zoom-in">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className='middle' start={0} end={5000} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
             <p >በላይ ምሩቃን</p>
             </Scroll>
           </div>
         </div>
-      <div className='mid'>
-         <div className='image'>
+      <div className={classes.mid}>
+         <div className={classes.image}>
           <img  ref={law} src={lawh} alt=''/>
          </div>
-         <div className='graduates' data-aos="zoom-in">
+         <div className={classes.graduates} data-aos="zoom-in">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className='middle' start={0} end={5000} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
             <p >በላይ ምሩቃን</p>
             </Scroll>
           </div>
       </div>
       
-      <div className='pop_right'>
-          <div className='years' data-aos="fade-left">
+      <div className={classes.pop_right}>
+          <div className={classes.years} data-aos="fade-left">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className='middle' start={0} end={15} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={15} duration={5} delay={0}/>}
             <p>አመታት ያስቆጠረ</p>
             </Scroll>
           </div>
-          <div className='students' data-aos="fade-left">
+          <div className={classes.students} data-aos="fade-left">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className='middle' start={0} end={5000} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
             <p>በላይ ተማሪዎች</p>
             </Scroll> 
           </div>

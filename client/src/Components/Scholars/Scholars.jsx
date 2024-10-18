@@ -8,7 +8,7 @@ import Uabdulfetah from '../../assets/U-abdulfetah.jpg';
 import Uabubekr from '../../assets/U-abubekr.jpg';
 import SSherif from '../../assets/S-sherif.jpg';
 // import { useState } from 'react';
-import './Scholars.css'
+import classes from './Scholars.module.css'
 
 const four = [
     { 
@@ -67,18 +67,19 @@ function Scholars() {
    
     const [visible, setVisible] = useState(false)
   return (
-    <div className='scholar_b'>
-    <div className='photoes_wrapper'> 
+    <div className={classes.scholar_b}>
+        <h1>የበላይ ጠባቂ፣ የመሹራ አሚሮች እና የስራ አስጣሚ ኡስታዞች</h1>
+    <div className={classes.photoes_wrapper}> 
     {visible?eight.map((photo, i)=>(
-         <div key={i} className='photo_name'>
-         <div className="photo">
+         <div key={i} className={classes.photo_name}>
+         <div className={classes.photo}>
           <img src={photo.photo} alt="" />
           </div>
          <p>{photo.name}</p>
       </div>
     )):four.map((photo, i)=>(
-        <div key={i} className='photo_name'>
-        <div className="photo">
+        <div key={i} className={classes.photo_name}>
+        <div className={classes.photo}>
          <img src={photo.photo} alt="" />
          </div>
         <p>{photo.name}</p>
