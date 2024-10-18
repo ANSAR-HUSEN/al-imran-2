@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import PrayTimes from 'praytimess'
-import './Prayer_time.css'
+import classes from './Prayer_time.module.css'
 import solat from '../../assets/prayer_two.png'
 import AOS from 'aos';
 
@@ -18,61 +18,61 @@ useEffect(()=>{
     AOS.init();
 },[])
     return (
-        <div className='large_screen'>
-            <div className='solat_img' data-aos="fade-right">
+        <div className={classes.large_screen}>
+            <div className={classes.solat_img} data-aos="fade-right">
                 <img src={solat} alt="" />
             </div>
-        <div className='main_container'>
-            <div className='title'>
+        <div className={classes.main_container}>
+            <div className={classes.title}>
                 <h1>የሶላት ወቅቶች በአዲስ አበባ</h1>
             </div>
-            <div className='time_container' data-aos="fade-left">
-                <div className='names_prayer' >
+            <div className={classes.time_container} data-aos="fade-left">
+                <div className={classes.names_prayer}>
                     <ul>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <h4>ሶላት</h4>
                                 <h4>ወቅት</h4>
                             </div>
                             <hr style={{ border: '1px dotted #05A04B', margin:'5px 0'  }}/>
                         </li>
                         <li>
-                            <div className='prayer__time'>
+                            <div className={classes.prayer__time}>
                                 <p>ፈጅር</p>
                                 <p>{times.fajr}</p>
                             </div>
                             <hr style={{ border: '1px dotted #05A04B',  }}/>
                         </li>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <p>ፀሀይ መዉጫ</p>
                                 <p>{times.sunrise}</p>
                                 </div>
                                 <hr style={{ border: '1px dotted #05A04B', }} />
                                 </li>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <p>ዙህር</p>
                                 <p>{times.dhuhr}</p>
                                 </div>
                                 <hr style={{ border: '1px dotted #05A04B' }} />
                         </li>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <p>ዓስር</p>
                                 <p>{times.asr}</p>
                                 </div>
                                 <hr style={{ border: '1px dotted #05A04B' }} />
                         </li>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <p>መጝሪብ</p>
                                 <p>{times.maghrib}</p>
                                 </div>
                                 <hr style={{ border: '1px dotted #05A04B', }}/>
                         </li>
                         <li>
-                        <div className='prayer__time'>
+                        <div className={classes.prayer__time}>
                                 <p>ዒሻ</p>
                                 <p>{times.isha}</p>
                                 </div>

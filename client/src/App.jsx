@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <About/>
       <PrayerTimes />
-      {/* <Services /> */}
+      <Services />
       <Blogs_events/>
       <Scholar/>
       <Footer/>

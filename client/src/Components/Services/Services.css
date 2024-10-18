@@ -30,3 +30,9 @@ background-color: #e6891e;
     grid-template-columns: repeat(4,1fr);
     padding:50px ;
 }
+@media (max-width : 769px){
+  .service__card__container{
+    display: flex;
+    flex-direction: column;
+  }
+}

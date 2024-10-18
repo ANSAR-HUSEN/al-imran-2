@@ -9,8 +9,7 @@ function Services() {
         <h4>Our Worldwide</h4>
         <h1>Offerd Services</h1>
       </div>
-      <div className="service__card__container">
-        
+      <div className="service__card__container"> 
        <ServiceCard/>
        <ServiceCard/>
        <ServiceCard/>
