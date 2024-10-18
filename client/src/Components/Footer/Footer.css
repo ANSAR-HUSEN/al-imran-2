@@ -116,8 +116,12 @@
       /* padding-left: 44px; */
       display: flex;
       /* justify-content: center; */
-      justify-content: space-between;
-      align-items: center;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      
+    }
+    .contact__container p{
+      font-size: 5px;
     }
     .footer{
       background-color: #05A04B;
