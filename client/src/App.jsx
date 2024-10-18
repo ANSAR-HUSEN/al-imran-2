@@ -8,6 +8,7 @@ import PrayerTimes from "./Components/Prayer_times/Prayer_time";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
+import Scholar from './Components/Scholars/Scholars'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <PrayerTimes />
       {/* <Services /> */}
       <Blogs_events/>
+      <Scholar/>
       <Footer/>
     </>
   );
