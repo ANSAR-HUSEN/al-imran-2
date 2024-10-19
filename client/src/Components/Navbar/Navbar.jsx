@@ -3,7 +3,7 @@ import { Menuitems } from "./Menuitems";
 import "./Navbar.css";
 import logo from '../../assets/logo_write.png'
 import logo_1 from '../../assets/logo_only.png'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import logo from "../assets/favicon-32x32.png";
 const Navbar = () => {
    const [clicked, setClicked] = useState(false);
@@ -15,8 +15,10 @@ const Navbar = () => {
   return (
     <nav className="NavbarItems">
       <div className="navbar-logo">
+        <Link onClick={window.scrollTo(0,0)} to = '/'>
         <img src={logo_1} alt="" />
         <img src={logo} alt="" />
+        </Link>
       </div>
       <div className="menu-icons" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -25,10 +27,10 @@ const Navbar = () => {
         {Menuitems.map((item, index) => {
           return (
             <li key={index}>
-              <a className={item.cName} href={item.url}>
+              <Link className={item.cName} to={item.url}>
                 <i class={item.icon}></i>
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
