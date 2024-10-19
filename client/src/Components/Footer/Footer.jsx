@@ -6,6 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from '@mui/icons-material/Telegram';
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -17,18 +18,18 @@ function Footer() {
           </div>
 
           <div className={classes.icons}>
-            <a href="https://www.facebook.com/evangaditech" target="_blank">
+            <Link to="http://www.facebook.com/alimrancmc" target="_blank">
               <FacebookOutlinedIcon />
-            </a>
-            <a href="https://www.instagram.com/evangaditech/" target="_blank">
+            </Link>
+            <Link to="www.instagram.com/alimrancmc" target="_blank">
               <InstagramIcon />
-            </a>
-            <a href="https://www.youtube.com/@EvangadiTech" target="_blank">
+            </Link>
+            <Link to="www.youtube.com/@alimrancmc" target="_blank">
               <YouTubeIcon />
-            </a>
-            <a href="https://www.youtube.com/@EvangadiTech" target="_blank">
+            </Link>
+            <Link to="https://t.me/Alimrancmc" target="_blank">
               <TelegramIcon />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -36,24 +37,24 @@ function Footer() {
           <h2>ጠቃሚ ሊንኮች</h2>
           <ul className={classes.list}>
             <li>
-              <a href="https://www.evangadi.com/legal/terms/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/">
                 ዋና ማዉጫ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/about">
                 መረጃ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/service" >
                 አገልግሎቶች
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/contact" >
                 አድራሻ
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
