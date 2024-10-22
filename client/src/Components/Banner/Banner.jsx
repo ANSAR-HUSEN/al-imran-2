@@ -26,9 +26,9 @@ function Banner() {
     
       const animation = gsap.fromTo(
         name.current,
-        { fontSize: '40px'}, // Starting font size
+        { fontSize: '2.5rem'}, // Starting font size
         {
-          fontSize: '20px',
+          fontSize: '1rem',
           duration: 1,
           scrollTrigger: {
             trigger: name.current,
@@ -64,7 +64,7 @@ function Banner() {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
    
-  }, []);
+  }, [counterOn]);
 
   useEffect(()=>{
     AOS.init({ duration: 1000, // Animation duration
@@ -76,12 +76,11 @@ function Banner() {
   return (
     <section className='banner-container'>
     <div className='banner'>
-      <nav>
-        {/* Navigation items can go here */}
-      </nav>
       <div className='logo'>
         <img src={logo} alt="Logo" />
+        <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <h1 ref={name}>አል-ኢምራን(CMC) የቁርአን ኣና ኢስላማዊ ትምህርት ተቋም</h1>
+        </Scroll>
       </div>
     </div>
     <div className='data'>
@@ -97,6 +96,12 @@ function Banner() {
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             {counterOn && <CountUp className='middle' start={0} end={150} duration={5} delay={0}/> }
             <p>በላይ መምህራን</p>
+            </Scroll>
+          </div>
+          <div className='graduates_mobile' data-aos="zoom-in">
+          <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
+            {counterOn &&   <CountUp className='middle' start={0} end={5000} duration={5} delay={0}/>}
+            <p >በላይ ምሩቃን</p>
             </Scroll>
           </div>
         </div>

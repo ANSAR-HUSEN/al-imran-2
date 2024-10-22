@@ -1,8 +1,13 @@
 .Donation{
     display: flex;
+    overflow: hidden;
+}
+.Donation__left{
+    width: 80%;
 }
 .Donation__right{
     padding: 100px;
+    width: 100%;
 
 
 }
@@ -14,7 +19,7 @@ padding: 10px;
 border-radius: 5px;
 
 }
-.top-input ,.bottom-input,.Donation__input{
+.top_input ,.bottom_input,.Donation__input{
     display: flex;
     justify-content: space-around;
     padding: 5px;
@@ -29,7 +34,7 @@ border-radius: 5px;
 
 .Donation__button{
     padding: 7px;
-    width: 30%;
+    width: 50%;
     margin: 20px 0 0 35%;
    
    
@@ -40,8 +45,5 @@ border-radius: 5px;
         display: flex;
         flex-direction: column;
     }
-    .Donation__right{
-        width: auto;
-    }
-    
+   
 }
