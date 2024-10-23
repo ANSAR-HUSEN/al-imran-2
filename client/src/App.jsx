@@ -13,6 +13,7 @@ import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import { Route, Routes } from "react-router-dom";
 import AboutPage from "./Pages/About/AboutPage";
+// import Toaster from 'react-hot-toast'
 // import Contact from "./Components/Contact/Contact";
 
 
@@ -29,6 +30,7 @@ function App() {
       <Footer/> */}
       {/* <Contact/> */}
       <Routes>
+        {/* <Toaster/> */}
         <Route path="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/about" element={<AboutPage/>}/>
