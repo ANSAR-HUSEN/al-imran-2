@@ -23,6 +23,7 @@ function App() {
       <Banner />
       <About/>
       <PrayerTimes />
+      <Blogs_events/>
       <Services />
       <Blogs_events/>
       <Scholar/>

@@ -1,0 +1,49 @@
+.Donation{
+    display: flex;
+    overflow: hidden;
+}
+.Donation__left{
+    width: 80%;
+}
+.Donation__right{
+    padding: 100px;
+    width: 100%;
+
+
+}
+.Donation__title h2{
+padding: 20px;
+}
+.Donation__form input {
+padding: 10px;
+border-radius: 5px;
+
+}
+.top_input ,.bottom_input,.Donation__input{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 10px;
+
+}
+
+.Donation__form input:active{
+
+    border: 1px solid orangered;
+}
+
+.Donation__button{
+    padding: 7px;
+    width: 50%;
+    margin: 20px 0 0 35%;
+   
+   
+}
+
+@media screen and (max-width:568px){
+    .Donation{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}

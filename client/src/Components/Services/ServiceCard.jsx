@@ -1,14 +1,14 @@
 import React from 'react'
-import './Services.css'
+import classes from './Services.module.css'
 
-function ServiceCard() {
+function ServiceCard({title,desc}) {
   return (
     <>
-    <div className="services__container">
-            <h3>Quran Learning</h3>
-            <div className="services__inclined__container">
-                <div className="services__inclined"></div>
-                <div className="services__content">Quran Teaching sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+    <div className={classes.services__container}>
+            <h3>{title}</h3>
+            <div className={classes.services__inclined__container}>
+                <div className={classes.services__inclined}></div>
+                <div className={classes.services__content}>{desc}</div>
             </div>
         </div>
 
