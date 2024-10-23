@@ -4,17 +4,16 @@ import ServiceCard from "./ServiceCard";
 
 function Services() {
   return (
-    <div className={classes.wrapper}>
-      <div className={classes.serivics__title}>
+    <div className='wrapper'>
+      <div className="serivices__title">
         <h4>Our Worldwide</h4>
         <h1>Offerd Services</h1>
       </div>
-      <div className={classes.service_card__container}>
-        
-       <ServiceCard title={"Quran Learning"} desc={"learning sunnah and the best way of livng based on the path of resul sellelahu aleyhi weselem"}/>
-       <ServiceCard title={"Sheria"} desc={"learning sunnah and the best way of livng based on the path of resul sellelahu aleyhi weselem"}/>
-       <ServiceCard title={"Terbia"} desc={"learning sunnah and the best way of livng based on the path of resul sellelahu aleyhi weselem"}/>
-       <ServiceCard title={"Arebic Lughah"} desc={"learning sunnah and the best way of livng based on the path of resul sellelahu aleyhi weselem"}/>
+      <div className="service__card__container"> 
+       <ServiceCard/>
+       <ServiceCard/>
+       <ServiceCard/>
+       <ServiceCard/>
       </div>
     </div>
   );

@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  background-image: url('../photo_2024-10-18_22-12-11.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 20px; /* Space between the title and the breadcrumb */
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 60px; /* Adjust width of underline */
+  height: 4px;
+  background-color: orange;
+  bottom: -15px; /* Increased space between title and underline */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.breadcrumb {
+  color: white;
+  margin-top: 25px; /* Space between title and breadcrumb paragraph */
+  font-size: 18px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: orange; /* Hover effect for "Home" link */
+}
+
+.breadcrumb span {
+  color: orange; /* "Contact Us" text in orange */
+  margin-left: 5px; /* Space between "Home" and "/" */
+}

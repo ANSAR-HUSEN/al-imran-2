@@ -1,0 +1,38 @@
+.serivices__title {
+  text-align: center;
+}
+.services__container {
+  width: 37vh;
+}
+.services__inclined__container {
+  margin-top: 50px;
+}
+/* .wrapper{
+  background-image: url(../../assets/pattern_R.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.services__inclined {
+height: 45px;
+transform: skewY(-10deg);
+border-radius: 10%;
+background-color: #e6891e;
+}
+.services__content{
+    margin-top: -27px;
+    border-radius: 5%;
+    background-color: #e6891e;
+    padding: 40px 10px 10px;
+    
+}
+.service__card__container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:50px ;
+}
+@media (max-width : 769px){
+  .service__card__container{
+    display: flex;
+    flex-direction: column;
+  }
+}

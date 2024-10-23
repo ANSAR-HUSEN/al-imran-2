@@ -1,68 +1,69 @@
 import React from 'react'
-import "./Footer.css"
+import classes from "./Footer.module.css"
 import Logo from "../../assets/logo_only.png";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from '@mui/icons-material/Telegram';
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer>
-      <section className="footer">
-        <div className="icons__container">
-          <div className='logo_alimran'>
+      <section className={classes.footer}>
+        <div className={classes.icons__container}>
+          <div className={classes.logo_alimran}>
             <img src={Logo} alt="al-imran" target="_blank" />
           </div>
 
-          <div className="icons">
-            <a href="https://www.facebook.com/evangaditech" target="_blank">
+          <div className={classes.icons}>
+            <Link to="http://www.facebook.com/alimrancmc" target="_blank">
               <FacebookOutlinedIcon />
-            </a>
-            <a href="https://www.instagram.com/evangaditech/" target="_blank">
+            </Link>
+            <Link to="www.instagram.com/alimrancmc" target="_blank">
               <InstagramIcon />
-            </a>
-            <a href="https://www.youtube.com/@EvangadiTech" target="_blank">
+            </Link>
+            <Link to="www.youtube.com/@alimrancmc" target="_blank">
               <YouTubeIcon />
-            </a>
-            <a href="https://www.youtube.com/@EvangadiTech" target="_blank">
+            </Link>
+            <Link to="https://t.me/Alimrancmc" target="_blank">
               <TelegramIcon />
-            </a>
+            </Link>
           </div>
         </div>
 
-        <div className="links__container">
+        <div className={classes.links__container}>
           <h2>ጠቃሚ ሊንኮች</h2>
-          <ul className="list">
+          <ul className={classes.list}>
             <li>
-              <a href="https://www.evangadi.com/legal/terms/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/">
                 ዋና ማዉጫ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/about">
                 መረጃ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/service" >
                 አገልግሎቶች
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.evangadi.com/legal/privacy/" target="_blank">
+              <Link onClick={window.scrollTo(0,0)} to="/contact" >
                 አድራሻ
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div className="contact__container">
+        <div className={classes.contact__container}>
           <h2>አድራሻ</h2>
           <p>al-imram@gmail.com</p>
           <p>+1-202-386-2702</p>
-          <div className='location'>
+          <div className={classes.location}>
             <LocationOnIcon/>
             <p>Ethiopia, Addis Ababa, CMC</p>
           </div>
